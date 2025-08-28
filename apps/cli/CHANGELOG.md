@@ -1,5 +1,13 @@
 # vibes
 
+## 1.0.4
+
+### Patch Changes
+
+- 7669eca: Fix custom registry URL construction to support external component registries
+
+  The `--registry` option now correctly constructs URLs for custom registries by using a simplified path structure (`{registryUrl}/{name}.json`) instead of including the `vibe` namespace in the path. This enables proper integration with external component registries like DiceUI while maintaining backward compatibility with the default vibes registry.
+
 ## 1.0.0
 
 ### Major Changes
